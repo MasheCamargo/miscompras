@@ -1,0 +1,158 @@
+body {
+  width: 50%;
+  margin: 0 auto;
+}
+
+header {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+header h1 {
+  font-size: 50px;
+  color: #ba68c8;
+  font-weight: 800;
+  text-shadow: 2px 2px 1px #8a1fa0;
+}
+
+footer p {
+  font-size: 20px;
+  color: #ba68c8;
+  font-weight: 800;
+  text-align: center;
+}
+
+header img {
+  width: 200px;
+  height: 200px;
+}
+
+input {
+  font-size: 20px;
+  color: #37474f;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid #37474f;
+  padding: 5px;
+}
+
+ul {
+  padding: 0;
+}
+
+.task {
+  background-color: #37474f;
+  padding: 15px;
+  margin: 5px;
+  overflow-x: hidden;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.task span {
+  color: #ffffff;
+}
+
+.icon {
+  float: right;
+  margin-right: 20px;
+}
+
+article {
+  display: grid;
+}
+
+.edit-todo {
+  width: 85%;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #ffffff;
+}
+
+.button {
+  padding: 10px;
+  font-size: 14px;
+  color: #6c6777;
+  background-color: #fff;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.button.selected {
+  color: #fff;
+  background-color: #6c6777;
+}
+
+.button.clear {
+  float: right;
+  color: #fff;
+  background-color: #ee1630;
+  width: 170px;
+}
+
+/*     Responsive    */
+@media screen and (max-width: 767px) {
+  header {
+    padding: 0 10px;
+  }
+
+  header img {
+    width: 150px;
+    height: 150px;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  article {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .list__button {
+    flex-direction: column;
+    display: flex;
+  }
+
+  ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  ul .task {
+    margin: 0 0 3px;
+  }
+
+  form {
+    overflow: hidden;
+  }
+
+  .button {
+    font-size: 12px;
+  }
+
+  .button.clear {
+    float: none;
+    width: 100px;
+  }
+
+  .icon {
+    margin-right: 0;
+    margin-left: 20px;
+  }
+}
